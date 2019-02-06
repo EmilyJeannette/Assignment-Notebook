@@ -13,6 +13,7 @@
 		4DEAFAAC220A03D300FCFDA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DEAFAAA220A03D300FCFDA5 /* Main.storyboard */; };
 		4DEAFAAE220A03D800FCFDA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DEAFAAD220A03D800FCFDA5 /* Assets.xcassets */; };
 		4DEAFAB1220A03D800FCFDA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DEAFAAF220A03D800FCFDA5 /* LaunchScreen.storyboard */; };
+		4DEAFAB9220B4D5500FCFDA5 /* Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEAFAB8220B4D5500FCFDA5 /* Assignment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		4DEAFAAD220A03D800FCFDA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DEAFAB0220A03D800FCFDA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4DEAFAB2220A03D800FCFDA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DEAFAB8220B4D5500FCFDA5 /* Assignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		4DEAFA98220A03D300FCFDA5 = {
 			isa = PBXGroup;
 			children = (
+				4DEAFAB8220B4D5500FCFDA5 /* Assignment.swift */,
 				4DEAFAA3220A03D300FCFDA5 /* Assignment Notebook */,
 				4DEAFAA2220A03D300FCFDA5 /* Products */,
 			);
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DEAFAB9220B4D5500FCFDA5 /* Assignment.swift in Sources */,
 				4DEAFAA9220A03D300FCFDA5 /* DetailViewController.swift in Sources */,
 				4DEAFAA7220A03D300FCFDA5 /* MasterViewController.swift in Sources */,
 				4DEAFAA5220A03D300FCFDA5 /* AppDelegate.swift in Sources */,
