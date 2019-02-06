@@ -78,6 +78,11 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Assignment Details" id="mOI-FS-AaM"/>
+                    <connections>
+                        <outlet property="classNameTextField" destination="PcF-e8-AKL" id="Fig-ty-uSh"/>
+                        <outlet property="dateTextField" destination="tC1-PF-UzT" id="fFj-n6-dYd"/>
+                        <outlet property="nameTextField" destination="TGR-Jl-g1B" id="1SJ-rI-5G5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
             </objects>
