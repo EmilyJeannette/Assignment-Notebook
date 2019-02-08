@@ -11,7 +11,7 @@ import UIKit
 class MasterViewController: UITableViewController {
 
     var detailViewController: DetailViewController? = nil
-    var objects = [Any]()
+    var assignments = [Assignment]()
 
 
     override func viewDidLoad() {
@@ -34,9 +34,32 @@ class MasterViewController: UITableViewController {
 
     @objc
     func insertNewObject(_ sender: Any) {
-        objects.insert(NSDate(), at: 0)
-        let indexPath = IndexPath(row: 0, section: 0)
-        tableView.insertRows(at: [indexPath], with: .automatic)
+        let alert = UIAlertController(title: "add city", message: nil, preferredStyle: .alert)
+        alert.addTextField { (textField) in
+            textField.placeholder = "Assignment"
+        }
+        alert.addTextField { (textField) in
+            textField.placeholder = "Class Name"
+        }
+        alert.addTextField { (textField) in
+            textField.placeholder = "Due Date"
+        }
+        let cancelAction = UIAlertAction(title: "Cancel", style: .default, handler: nil)
+        alert.addAction(cancelAction)
+        let insertAction = UIAlertAction(title: "add", style: .default){ (action) in
+            let nameTextField = alert.textFields![0] as UITextField
+            let classNameTextField = alert.textFields![1] as UITextField
+            let dateTextField = alert.textFields![2] as UITextField
+            if let date = String(dateTextField.text!){
+                let assignment = Assignment(name: nameTextField.text!,
+                                            className: classNameTextField.text!,
+                                            date: dateTextField.text!)
+                self.assignments.append(assignment)
+                self.tableView.reloadData()
+            }
+        }
+        alert.addAction(insertAction)
+        present(alert, animated: true, completion: nil)
     }
 
     // MARK: - Segues
