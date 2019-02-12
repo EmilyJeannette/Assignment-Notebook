@@ -11,11 +11,11 @@ import UIKit
 class Assignment: Codable {
     var name : String
     var className : String
-    var date = String
+    var dueDate : String
     
-    init(name: String, className: String, date: String) {
+    init(name: String, className: String, dueDate: String) {
         self.name = name
         self.className = className
-        self.date = date
+        self.dueDate = dueDate
     }
 }

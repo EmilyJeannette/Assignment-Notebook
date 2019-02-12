@@ -9,8 +9,8 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
-
+    
+    
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var classNameTextField: UITextField!
     @IBOutlet weak var dateTextField: UITextField!
@@ -27,25 +27,24 @@ class DetailViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         configureView()
     }
-
+    
     func configureView() {
         // Update the user interface for the detail item.
         if let assignment = self.detailItem {
             if nameTextField != nil {
                 nameTextField.text = assignment.name
                 classNameTextField.text = assignment.className
-                dateTextField.text = String(assignment.date)
+                dateTextField.text = assignment.dueDate
             }
         }
     }
-
+    
     override func viewWillDisappear(_ animated: Bool) {
         if let assignment = self.detailItem {
             assignment.name = nameTextField.text!
             assignment.className = classNameTextField.text!
-            assignment.date = dateTextField.text!
+            assignment.dueDate = dateTextField.text!
         }
     }
-
 }
 
